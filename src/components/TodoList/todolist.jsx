@@ -2,7 +2,8 @@ import React from "react";
 import SfButton from "../UI/button/SfButton";
 import styles from "./todolist.module.css";
 
-function Todolist({ todo, number }) {
+function Todolist({ todo, number, deleteTodo }) {
+
     return (
         <div className={styles.todo}>
             <h2 className={styles.todo__title}>
@@ -10,7 +11,11 @@ function Todolist({ todo, number }) {
             </h2>
             <p className={styles.todo__description}>{todo.description}</p>
             <div className={styles.todo__btns}>
-                <SfButton btnStyle={'sfbutton-del'}>Delete</SfButton>
+                <SfButton
+                    onClick={() => deleteTodo(todo)}
+                    btnStyle={'sfbutton-del'}>
+                    Delete
+                </SfButton>
             </div>
         </div>
     );
