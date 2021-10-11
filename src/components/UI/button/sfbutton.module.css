@@ -1,0 +1,25 @@
+.sfbutton {
+    font-size: 16px;
+    background-color: inherit;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 0.4s ease;
+}
+
+.sfbutton_del:hover,
+.sfbutton_del:active {
+    border: 1px solid red;
+    background-color: red;
+    box-shadow: 0 0 15px red;
+    color: white;
+}
+ 
+.sfbutton_add:hover,
+.sfbutton_add:active {
+    border: 1px solid lightgreen;
+    background-color: lightgreen;
+    box-shadow: 0 0 15px lightgreen;
+    color: white;
+}
+

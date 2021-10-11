@@ -1,0 +1,17 @@
+.sfinput {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid lightgray;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    /* transition: 0.4s ease; */
+}
+
+.sfinput:focus {
+    border: 1px solid rgb(189, 247, 189);
+    background-color: rgb(189, 247, 189);
+    box-shadow: 0 0 15px rgb(92, 252, 92);
+}
