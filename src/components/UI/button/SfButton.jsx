@@ -2,7 +2,6 @@ import React from 'react'
 import classes from './sfbutton.module.css'
 
 const SfButton = ({ children, btnStyle, ...props }) => {
-    console.log(props)
     
     btnStyle === 'sfbutton-del'
         ? btnStyle = classes.sfbutton_del

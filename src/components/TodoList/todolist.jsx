@@ -1,8 +1,9 @@
 import React from "react";
-import SfButton from "../UI/button/SfButton";
+import SfButton from "../UI/Button/SfButton";
 import styles from "./todolist.module.css";
 
 function Todolist({ todo, number, deleteTodo }) {
+    //TODO: create date in todo 
 
     return (
         <div className={styles.todo}>
