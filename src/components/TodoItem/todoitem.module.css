@@ -1,0 +1,16 @@
+.todoitem {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}  
+ 
+.todoitem__title {
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+} 
+
+.todoitem__description  {}
+ 
+.todoitem__btns  {
+}
