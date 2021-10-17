@@ -1,0 +1,23 @@
+.modalwindow {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0,0, 0, .3);
+}
+
+.modalwindow__content {
+    margin-top: 20%;
+    padding: 25px;
+    border-radius: 10px;
+    min-width: 200px;
+    background-color: white;
+}
+
+.modalwindow.modalwindow_active {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
