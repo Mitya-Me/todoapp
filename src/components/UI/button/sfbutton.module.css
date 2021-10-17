@@ -5,6 +5,7 @@
     border-radius: 5px;
     padding: 5px 10px;
     transition: .3s ease;
+    margin: 10px 0;
 }
 
 .sfbutton_del:hover,

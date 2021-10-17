@@ -3,9 +3,10 @@ import classes from './sfbutton.module.css'
 
 const SfButton = ({ children, btnStyle, ...props }) => {
     
-    btnStyle === 'sfbutton-del'
+    btnStyle === 'del'
         ? btnStyle = classes.sfbutton_del
         : btnStyle = classes.sfbutton_add
+
 
     return (
         <button {...props}  className={`${classes.sfbutton} ${btnStyle}`}>
