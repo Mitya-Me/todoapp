@@ -28,7 +28,7 @@ const TodoForm = ({ createTodo }) => {
                 type='text'
                 placeholder='Enter description...'
             />
-            <SfButton onClick={addNewPost} text='create todo' btnStyle='todo'>
+            <SfButton onClick={addNewPost} text='create todo' btnStyle='add'>
                 {" "}
                 Create todo{" "}
             </SfButton>
