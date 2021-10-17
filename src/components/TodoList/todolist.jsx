@@ -1,25 +1,20 @@
 import React from "react";
-import SfButton from "../UI/Button/SfButton";
+import TodoItem from "../TodoItem/TodoItem";
 import styles from "./todolist.module.css";
+import Error from "../Error/Error"
 
-function Todolist({ todo, number, deleteTodo }) {
-    //TODO: create date in todo 
+function TodoList({ todos, number, deleteTodo }) {
+    if (!todos) {
+        return <Error />
+    }
 
     return (
-        <div className={styles.todo}>
-            <h2 className={styles.todo__title}>
-                {number}. {todo.title}
-            </h2>
-            <p className={styles.todo__description}>{todo.description}</p>
-            <div className={styles.todo__btns}>
-                <SfButton
-                    onClick={() => deleteTodo(todo)}
-                    btnStyle={'sfbutton-del'}>
-                    Delete
-                </SfButton>
-            </div>
+        <div className={styles.todolist}>
+            {todos.map((todo, index) => 
+                <TodoItem deleteTodo={deleteTodo} number={index + 1} todo={todo}/>
+            )}
         </div>
     );
 }
 
-export default Todolist;
+export default TodoList;
